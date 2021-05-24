@@ -23,7 +23,6 @@ const App = () => {
             <HowItWorks />
             <Features />
             <Reviews />
-            novoresume
             <Footer />
         </div>
     );
