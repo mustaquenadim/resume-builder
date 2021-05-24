@@ -1,0 +1,131 @@
+@import url(//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid+Circular+B+Medium);
+
+body {
+  font-family: "Euclid Circular B",sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Banner  */
+.custom-btn {
+  /* background-color: #00C8AA; */
+  /* position: absolute; */
+  /* content: " "; */
+  /* display: block; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* top: 0; */
+  /* left: 0; */
+  /* border-radius: 5rem; */
+  /* z-index: 99; */
+  /* border: none; */
+}
+
+.custom-btn:before {
+  /* transform-origin: center; */
+  /* transition: opacity .2s ease-out,left .2s ease-out,top .2s ease-out,border-radius .2s ease-out; */
+  /* will-change: opacity,left,top,border-radius; */
+}
+
+$color-button-red: #e74c3c;
+$color-button-green: #2ecc71;
+$color-button-blue: #3498db;
+
+$color-text: #ecf0f1;
+
+$font-family: Arial, helvetica, sans-serif;
+$font-size: 100%;
+
+// global style
+
+body {
+  font-size: $font-size;
+  font-family: $font-family;
+}
+
+// button --tr
+
+.btn-green-tr {
+  min-width: 130px;
+  position: relative;
+  display: inline-block;
+
+  text-align: center;
+  text-transform: uppercase; 
+
+  padding: 15px;
+  margin: 30px 25px;
+
+  font-size: $font-size + 40%;
+  font-weight: 600;
+
+  color: $color-text;
+
+  transition: 0.5s;
+  border: none;
+}
+
+.btn-green-tr { background-color: $color-button-green; }
+
+.btn-green-tr:before {
+  position: absolute;
+  border-top: 5px solid lighten($color-button-green, 5%);
+  border-left: 5px solid lighten($color-button-green, 5%);  
+  border-right: 5px solid darken($color-button-green, 5%);
+  border-bottom: 5px solid darken($color-button-green, 5%);
+
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;  
+
+  transition: 0.5s;
+
+}
+
+.btn-green-tr:hover {
+  box-shadow: 7px 7px darken($color-button-green, 20%), -7px -7px lighten($color-button-green, 20%);
+  cursor: pointer;
+    &::before {
+    border: 0px ;
+  }
+}
+
+// button --qa
+
+.btn-green-qa {
+  min-width: 120px;
+  position: relative;
+  display: inline-block;
+
+  text-align: center;
+  text-transform: uppercase; 
+
+  padding: 10px 15px;
+  margin: 30px 25px;
+
+  font-size: $font-size + 40%;
+  font-weight: 600;
+
+  transition: 0.5s;
+}
+
+.btn-green-qa { border: 5px solid $color-button-green; color: $color-button-green; }
+
+.btn-green-qa:hover {
+  
+  cursor: pointer;
+    &::before {
+    border: 0px ;
+  }
+}
+
+.btn-green-qa:hover {
+  background-color: darken($color-button-green, 5%);
+  border: 5px solid lighten($color-button-green, 5%);
+  color: $color-text;
+
+  cursor: pointer;
+}
